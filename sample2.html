@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="'d4"></p>
+<p id="d5"></p>
+<body>
+    <script>
+        const cargo=['oxygen tanks','space suits','parrot','instruction manuami','meal packs','slinky','security blanket'];
+        cargo[6]='space tether';
+        var removed=cargo.pop();
+        document.getElementById('d1').innerHTML="after deleting last element array is["+cargo+"]";
+        document.getElementById('d2').innerHTML='first element array is['+cargo.shift()+']';
+        cargo.unshift(1138);
+        cargo.push('20 meter');
+        document.getElementById('d3').innerHTML=cargo;
+        document.getElementById('d4').innerHTML=cargo.length;
+        document.getElementById('d5').innerHTML=literal;
+    </script>
+</body>
+</html>
